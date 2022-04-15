@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/index.css" />
+
+    <form action="/GuiMail_61133848/Index" method="post">
+        <p>CHỨC NĂNG GỬI EMAIL</p>
+        <table>
+            <tr>
+                <td>
+                    Gửi từ Email
+                </td>
+                <td></td>
+                <td>
+                    <input type="email" name="From" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mật khẩu
+                </td>
+                <td></td>
+                <td>
+                    <input type="password" name="Password" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gửi đến Email
+                </td>
+                <td></td>
+                <td>
+                    <input type="email" name="To" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tiêu đề
+                </td>
+                <td></td>
+                <td>
+                    <input type="text" name="Subject" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nội dung
+                </td>
+                <td></td>
+                <td>
+                    <textarea type="text" name="Body"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <input type="submit" value="Gửi mail" />
+
+                </td>
+            </tr>
+        </table>
+    </form>
